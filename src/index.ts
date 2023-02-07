@@ -127,7 +127,7 @@ export default class MouseWheel {
     this.hooksFn.push([hooks, name, handler])
   }
 
-  private checkException =  (target: HTMLElement) => {
+  private checkException(target: HTMLElement) {
     return this.exceptDOM.some((ele) => ele.contains(target) || ele === target);
   };
 
