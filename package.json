@@ -12,6 +12,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "scripts": {
+    "build": "node script/build.js"
+  },
   "homepage": "https://git.woa.com/reuszeng/better-mouse-wheel",
   "keywords": [
     "scroll",
@@ -28,6 +31,7 @@
   "devDependencies": {
     "@better-scroll/core": "^2.5.0",
     "@better-scroll/shared-utils": "^2.5.0",
+    "inquirer": "^8.2.5",
     "rollup": "^3.14.0",
     "rollup-plugin-typescript2": "^0.34.1",
     "rollup-plugin-uglify": "^6.0.4",
