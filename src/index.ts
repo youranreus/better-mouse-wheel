@@ -128,7 +128,7 @@ export default class MouseWheel {
   }
 
   private checkException =  (target: HTMLElement) => {
-    return this.exceptDOM.some((ele) => ele.contains(target)) || this.exceptDOM.includes(target);
+    return this.exceptDOM.some((ele) => ele.contains(target) || ele === target);
   };
 
   private wheelHandler(e: CompatibleWheelEvent) {
