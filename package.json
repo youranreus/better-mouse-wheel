@@ -15,7 +15,7 @@
   "scripts": {
     "build": "node script/build.js"
   },
-  "homepage": "https://git.woa.com/reuszeng/better-mouse-wheel",
+  "homepage": "https://github.com/youranreus/better-mouse-wheel",
   "keywords": [
     "scroll",
     "iscroll",
@@ -26,7 +26,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@git.woa.com:reuszeng/better-mouse-wheel.git"
+    "url": "git@github.com:youranreus/better-mouse-wheel.git"
   },
   "devDependencies": {
     "@better-scroll/core": "^2.5.0",
