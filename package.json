@@ -1,0 +1,36 @@
+{
+  "name": "better-mouse-wheel",
+  "version": "2.5.0",
+  "description": "support for MouseWheel in PC",
+  "author": {
+    "name": "jizhi/youranreus",
+    "email": "youranreus@qq.com"
+  },
+  "main": "dist/mouse-wheel.min.js",
+  "module": "dist/mouse-wheel.esm.js",
+  "typings": "dist/src/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://git.woa.com/reuszeng/better-mouse-wheel",
+  "keywords": [
+    "scroll",
+    "iscroll",
+    "javascript",
+    "typescript",
+    "ios"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@git.woa.com:reuszeng/better-mouse-wheel.git"
+  },
+  "devDependencies": {
+    "@better-scroll/core": "^2.5.0",
+    "@better-scroll/shared-utils": "^2.5.0",
+    "rollup": "^3.14.0",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "rollup-plugin-uglify": "^6.0.4",
+    "typescript": "^4.9.5"
+  }
+}
