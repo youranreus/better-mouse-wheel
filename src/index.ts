@@ -19,7 +19,7 @@ export interface MouseWheelConfig {
   discreteTime: number;
   throttleTime: number;
   dampingFactor: number;
-  exceptDOM?: HTMLElement | string;
+  exceptDOM?: HTMLElement | string | Array<HTMLElement>;
 }
 
 declare module "@better-scroll/core" {
@@ -101,7 +101,9 @@ export default class MouseWheel {
           document.querySelectorAll(this.mouseWheelOpt.exceptDOM)
         ) as unknown as HTMLElement[];
       } else {
-        this.exceptDOM = [this.mouseWheelOpt.exceptDOM];
+        this.exceptDOM = Array.isArray(this.mouseWheelOpt.exceptDOM)
+          ? this.mouseWheelOpt.exceptDOM
+          : [this.mouseWheelOpt.exceptDOM];
       }
     }
   }
@@ -135,7 +137,7 @@ export default class MouseWheel {
   }
 
   private checkException(target: HTMLElement) {
-    return this.exceptDOM.some((ele) => ele.contains(target) || ele === target);
+    return this.exceptDOM.some((ele) => ele.contains(target));
   }
 
   private wheelHandler(e: CompatibleWheelEvent) {
